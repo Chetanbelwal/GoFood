@@ -1,7 +1,7 @@
 import app from './app.js'
 import connectToDb from './utils/db.js'
 import {errorMiddleware} from './error/error.js'
-
+import reservationRoute from './routes/reservationRoute.js'
 
 // Middleware
 //app.use(cors()); // Enable Cross-Origin Resource Sharing
@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
 
 // Define port and start server
 const PORT = process.env.PORT || 5000;
+
+
+
+app.use('/api/reservation', reservationRoute)
 app.use(errorMiddleware)
 
 connectToDb().then(() => {
