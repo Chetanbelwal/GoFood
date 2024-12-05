@@ -327,7 +327,8 @@ nav svg {
 /**********************************************************************************************************************/
 .about {
   display: flex;
-  min-height: 100vh;
+  min-height: 50vh;
+  max-height: 90vh;
   justify-content: center;
   align-items: center;
   background-color: #f9fbf2;
@@ -606,7 +607,8 @@ nav svg {
 /*********************************************************************************************************************/
 .team {
   display: flex;
-  min-height: 60vh;
+  min-height: 30vh;
+  max-height: 60vh;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -693,6 +695,7 @@ nav svg {
   justify-content: center;
   align-items: center;
   min-height: 80vh;
+  
 }
 .who_are_we .container {
   max-width: 1500px;
@@ -853,7 +856,8 @@ footer .container .banner .right {
 /**********************************************************************************************************************/
 .reservation {
   display: flex;
-  min-height: 75vh;
+  min-height: 45vh;
+  max-height: 75vh;
   padding: 30px 20px;
   justify-content: center;
   align-items: center;
